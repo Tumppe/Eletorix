@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif; }
+
+strong {
+  color: #2C8ED6; }
+
+header {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  background-color: white;
+  color: #ffffff;
+  animation: hflip 0.25s linear; }
+
+#logot {
+  flex: 1;
+  display: flex;
+  align-items: center; }
+
+#logo {
+  float: left;
+  height: 50px; }
+
+#logo:active {
+  transform: scale(0.9); }
+
+#otsikko {
+  float: left;
+  display: none; }
+
+#otsikko:hover {
+  -webkit-filter: saturate(1.5);
+  filter: saturate(1.5); }
+
+#otsikko:active {
+  transform: scale(0.9); }
+.nayta {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044;
+  animation: hflip 0.25s linear; }
+
+.nayta:hover {
+  background-color: #00CCFF;
+  color: white; }
+
+.nayta:active {
+  background-color: #2C8ED6;
+  color: white; }
+
+.nakyy {
+  display: none; }
+
+header input {
+  min-width: 30px; }
+
+#hakudiv {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  align-items: stretch; }
+
+#haku {
+  font-size: 18px;
+  width: 100%;
+  flex: 5;
+  border-radius: 30px 0px 0px 30px;
+  border: 2px solid #002444;
+  box-shadow: 3px 3px #000044; }
+
+#hae_nappi {
+  flex: 2;
+  background-color: white;
+  border: 2px solid #002444;
+  height: 60px;
+  border-radius: 0px 30px 30px 0px;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044; }
+
+#hae_nappi:hover {
+  background-color: #00CCFF;
+  color: white; }
+
+#hae_nappi:active {
+  background-color: #2C8ED6;
+  color: white; }
+
+#hakukuva {
+  height: 70%; }
+
+.add {
+  flex: 0.5;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 2px #000044; }
+
+.add:hover {
+  animation: tilt 3s linear infinite;
+  animation-delay: 1s;
+  background-color: #00CCFF;
+  color: white; }
+
+.add:active {
+  transform: scale(0.9);
+  background-color: #2C8ED6;
+  color: white; }
+
+
+
+
+footer {
+    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff; }
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Aloitettu mobiilista */ }
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #hakudiv {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .add {
+    flex: 0.5; }
+header form{
+    flex: 1;
+}
+  #otsikko {
+    height: 30px;
+    display: block; }
+
+  #logo {
+    display: none; }
+
+   }
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .nakyy {
+    display: flex;
+        
+     }
+     .nayta {
+  display: none}
+
+  .lisaa {
+    margin-top: 30px;
+    width: 50%; }
+
+  header {
+    margin-bottom: 0px; }
+    header form{
+    flex: 0.5;
+}
+
+  #hakudiv {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0.5; }
+
+  #haku {
+    flex: 4; }
+
+  #hae_nappi {
+    flex: 1;
+    height: 50px;
+    width: 50px; }
+
+  .add {
+    flex: 0.1;
+    height: 50px; }
+
+  
+  
+
+  #logo {
+    display: none; }
+
+  #otsikko {
+    height: 40px;
+    display: block; }
+
+  }
+
+.suosikitLkm {
+    display: none;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    top: -10px;
+    position: relative;
+}
+.uudetviestitLkm {
+    display: none;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    top: -10px;
+    position: relative;
+}
+.sLkmHidden {
+    display: none;
+}
+
+.uusiSuosikki {
+    animation: grow2 0.50s linear;
+}
+
+@keyframes grow2 {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: orangered; }
+    50% {
+        -webkit-transform: scale(2);
+        background-color:yellow; }
+    100% {
+        -webkit-transform: scale(1);
+        background-color: orangered; } 
+}
+
+@keyframes tilt {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(-5deg); }
+  50% {
+    -webkit-transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(5deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1); } }
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(-180deg); }
+  100% {
+    -webkit-transform: rotateY(0deg); } }
+@keyframes hflip {
+  0% {
+    -webkit-transform: rotateX(-180deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@keyframes fakewrite {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+
+/* Microsoft Edgen bugin korjaus */
+@supports (-ms-ime-align: auto) {
+  body {
+        display: block;
+  }
+}

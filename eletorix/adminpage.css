@@ -1,0 +1,55 @@
+.sivunYllapito {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1em;
+    color: white;
+    border-radius: 15px; 
+    background-color: #002444;
+}
+
+.teeMuutoksia {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 60%;
+    padding: 1em;
+    justify-content: space-between;
+}
+.teeMuutoksia form {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    padding: 1em;
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.teeMuutoksia input, .teeMuutoksia select {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 2px solid #002444;
+    box-shadow: 3px 2px #000044;
+}
+
+@media only screen and (max-width: 400px) {
+    .sivunYllapito {
+        width: 100%;
+        padding: 0;
+    }
+    .teeMuutoksia {
+        width: 100%;
+    }
+    .teeMuutoksia textarea, .teeMuutoksia input, .teeMuutoksia select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: white;
+  color: white;
+  animation: hflip 0.25s linear; }
+
+#logot {
+  display: flex;
+  align-items: center; }
+
+#logo {
+  float: left;
+  height: 50px; }
+
+#logo:hover {
+  -webkit-filter: saturate(2);
+  filter: saturate(2);
+  animation: tilt 5s cubic-bezier(1, -2, 0, 2) infinite;
+  animation-delay: 1s; }
+
+#logo:active {
+  transform: scale(0.9); }
+
+.nayta {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044;
+  animation: hflip 0.25s linear; }
+
+.nayta:hover {
+  background-color: #00CCFF;
+  color: white; }
+
+.nayta:active {
+  background-color: #2C8ED6;
+  color: white; }
+
+.nakyy {
+  display: none; }
+
+#otsikko {
+  width: 70%;
+  animation: hflip 0.25s linear; }
+
+#slogan {
+  text-align: center;
+  margin-bottom: 5px;
+  margin: auto;
+  animation: hflip 0.25s linear; }
+
+#hakudiv {
+  padding-right: 0.9%;
+  padding-left: 0.1%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  animation: hflip 0.25s linear; }
+
+#kategoria {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044; }
+
+#haku {
+  font-size: 18px;
+  width: 100%;
+  flex: 7;
+  border-radius: 30px 0px 0px 30px;
+  border: 2px solid #002444;
+  box-shadow: 3px 3px #000044; }
+
+#hae_nappi {
+  flex: 2;
+  background-color: white;
+  border: 2px solid #002444;
+  padding: 5px;
+  height: 60px;
+  border-radius: 0px 30px 30px 0px;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044; }
+
+#hae_nappi:hover {
+  background-color: #00CCFF;
+  color: white; }
+
+#hae_nappi:active {
+  background-color: #2C8ED6;
+  color: white; }
+
+#hakukuva {
+  height: 70%; }
+
+.add {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 3px #000044; }
+
+.add:hover {
+  animation: tilt 3s linear infinite;
+  animation-delay: 2s;
+  background-color: #00CCFF;
+  color: white; }
+
+.add:active {
+  transform: scale(0.9);
+  background-color: #2C8ED6;
+  color: white; }
+
+.lisaa {
+  align-self: center;
+  background-color: #2C8ED6;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 90vw;
+  max-height: 90vh;
+  border-radius: 20px;
+  color: white;
+  padding: 0px 25px 25px 25px;
+  border: 7px solid #000044;
+  animation: grow 0.3s linear;
+  overflow: auto; }
+
+.lisaa input {
+  width: 100%;
+  font-size: 120%;
+  border-radius: 1px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer; }
+
+.lisaa button {
+  color: black;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid #002444;
+  cursor: pointer;
+  box-shadow: 3px 2px #000044; }
+
+.lisaa button:hover {
+  background-color: #00CCFF;
+  color: white; }
+
+.lisaa button:active {
+  transform: scale(0.9);
+  background-color: #2C8ED6;
+  color: white; }
+
+.peru {
+  align-self: center;
+  height: 35px;
+  width: 35px;
+  margin: 15px;
+  cursor: pointer; }
+
+.peru:hover {
+  -webkit-filter: saturate(2);
+  filter: saturate(2); }
+
+.peru:active {
+  transform: scale(0.8); }
+
+#jako {
+  width: 100%;
+  margin: auto;
+  background-color: #002444;
+  border-radius: 30px;
+  margin-bottom: 30px; }
+
+#nayta {
+  height: 40px; }
+
+#latest {
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 3px solid black;
+    border-top: 3px solid black;
+  animation: fakewrite 0.15s linear; }
+
+#latest h4 {
+  border-bottom: 1px solid white; }
+
+#suosituimmat {
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 3px solid black; 
+  animation: fakewrite 0.15s linear; }
+
+#suosituimmat h4 {
+  border-bottom: 1px solid white; }
+
+#latestfrom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  animation: hflip 0.25s linear; }
+
+#latestfrom div {
+  flex: 0.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 15px;
+  background-color: #2C8ED6;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid white; }
+
+#latestfrom div:hover {
+  animation: tilt 5s cubic-bezier(1, -2, 0, 2) infinite;
+  animation-delay: 1s;
+  background-color: #00CCFF; }
+
+#latestfrom div:active {
+  transform: scale(0.9);
+  background-color: #2C5ED6; }
+
+#latestfrom p {
+  margin-bottom: 10px;
+  border-bottom: 1px solid white; }
+
+#latestfrom img {
+  width: 50px;
+  height: 50px; }
+
+#ilmoitukset {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin-bottom: 30px; }
+
+.ilmoitus {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+
+  flex-direction: column;
+
+ 
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7px;
+  background-color: #2C8ED6;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  animation: flip 0.5s linear; }
+
+.ilmoitus:hover {
+  background-color: #00CCFF; }
+
+.ilmoitus:active {
+  background-color: #3C8ED6; }
+
+.tuotekuva {
+  border: 2px solid white;
+  border-radius: 5px;
+  max-width: 95%;
+max-height: 30vh;
+}
+
+.tuotekuvaus {
+  display: none; }
+
+.puhnumero {
+  display: none; }
+
+.myyja {
+  display: none; }
+
+.rasti {
+  height: 40px;
+  /*display: none;
+  margin: 15px;*/
+  cursor: pointer; }
+
+.rasti:hover {
+  -webkit-filter: saturate(2);
+  filter: saturate(2); }
+
+.rasti:active {
+  transform: scale(0.8); }
+.sydan:hover{
+animation-delay: 1s;
+animation: tilt 2s linear infinite;
+}
+.muokkaa{
+    height: 50px;
+}
+.muokkaa:hover{    
+    animation: rotate 12s linear infinite;
+    animation-delay: 1s;
+    -webkit-filter: saturate(2);
+  filter: saturate(2); 
+}
+.muokkaa:active {
+  transform: scale(0.8); }
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff; }
+.tyyliton {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+justify-content: space-between;
+   
+}
+.tyyliton p{
+    margin-top: 0.2em;
+}
+.ilmoitus_banner{
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+    align-content: center;
+  align-items: center;
+  justify-content: center;
+    margin: auto;
+  padding: 8px;
+  margin-bottom: 7px;
+  color: white;
+  animation: hflip 0.25s linear; 
+}
+.ilmoitus_banner form{
+   margin: auto;
+}
+.bannerTabs { 
+    /*
+    height:60px;
+    width:300px;
+    */
+}
+/*
+.poistamaan{
+    display: block;
+}
+.roskis{
+    display: none;
+}
+*/
+.suosikitLkm {
+    display: none;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    top: -10px;
+    position: relative;
+}
+.sLkmHidden {
+    display: none;
+}
+.uudetviestitLkm {
+    display: none;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    top: -10px;
+    position: relative;
+}
+
+.popUp {
+    position: fixed;
+    display: none;
+    padding: 1em;
+    right: 20px;
+    top: 80px;
+    width: 150px;
+    z-index: 1;
+    background-color:gray;
+    color:white;
+}
+
+.popUpImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.uusiSuosikki {
+    animation: grow2 0.50s linear;
+}
+.tyyliton2 {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.hakusivunappi {
+    background-color:  #2C8ED6;
+    margin-bottom: 1em; 
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    padding: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hakusivunappi:hover {
+    background-color:  #00CCFF;
+}
+.hakusivunappi:active { 
+    background-color:  #000044;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Aloitettu mobiilista */ }
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #otsikko {
+    height: 70px;
+    display: block; }
+
+  .ilmoitus {
+    width: 45%; } }
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .hakusivunappi {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+    
+    .nayta {
+  display: none}
+    
+  .lisaa {
+    margin-top: 30px;
+    width: 50%; }
+
+  header {
+    margin-bottom: 20px; }
+
+  #hakudiv {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px; }
+
+  #haku {
+    flex: 5; }
+
+  #hae_nappi {
+    flex: 1; }
+
+  .nakyy {
+    display: flex;
+     }
+
+  #jako {
+   
+    width: 60%; }
+
+  #otsikko {
+    height: 70px; }
+
+  #ilmoitukset {
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 5px; }
+
+  nav {
+    height: 10%;
+    text-align: center; }
+
+  .ilmoitus {
+    width: 24%; }
+    
+
+}
+/* Animaatiot */
+@keyframes grow2 {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: orangered; }
+    50% {
+        -webkit-transform: scale(2);
+        background-color:yellow; }
+    100% {
+        -webkit-transform: scale(1);
+        background-color: orangered; } 
+}
+@keyframes tilt {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(-5deg); }
+  50% {
+    -webkit-transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(5deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1); } }
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(-180deg); }
+  100% {
+    -webkit-transform: rotateY(0deg); } }
+@keyframes hflip {
+  0% {
+    -webkit-transform: rotateX(-180deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes fakewrite {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }

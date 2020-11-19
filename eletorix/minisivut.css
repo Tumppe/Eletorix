@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif; }
+.muokkaa {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: #002444;
+  padding: 30px;
+  border-radius: 50px 50px 0px 0px; }
+.ilmoitus {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7px;
+  background-color: #2C8ED6;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid white;
+  animation: flip 0.5s linear;
+    border: 2px solid #002444;
+box-shadow: 3px 2px #000044;
+
+}
+
+.takaisin{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid #002444;
+    cursor: pointer;
+    box-shadow: 3px 2px #000044;
+}
+.takaisin:hover{
+    background-color: #00CCFF;
+    color: white;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Aloitettu mobiilista */ }
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  .ilmoitus {
+    width: 50%; } }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+ 
+  .muokkaa {
+    margin-top: 25px;
+      width: 50%;
+      align-self: center;
+     }
+
+  
+
+  .ilmoitus {
+    width: 50%; }
+ }

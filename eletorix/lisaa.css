@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif; }
+.muokkaa {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: #002444;
+  padding: 30px;
+  border-radius: 50px 50px 0px 0px; }
+.ilmoitus {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7px;
+  background-color: #2C8ED6;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid white;
+  animation: flip 0.5s linear;
+    border: 2px solid #002444;
+box-shadow: 3px 2px #000044;
+
+}
+.ilmoitus input{
+    width: 100%;
+    border: 2px solid #002444;
+    box-shadow: 3px 2px #000044;
+    font-size: 1em;
+}
+textarea{
+    font-size: 1em; 
+}
+.ilmoitus select{
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+     border: 2px solid #002444;
+box-shadow: 3px 2px #000044;
+}
+textarea{
+     border: 2px solid #002444;
+box-shadow: 3px 2px #000044;
+}
+
+.paivita{
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid #002444;
+    cursor: pointer;
+    box-shadow: 3px 2px #000044;
+}
+.paivita:hover{
+    background-color: #00CCFF;
+    color: white;
+}
+
+.suosikitLkm {
+    display: none;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    top: -10px;
+    position: relative;
+}
+.sLkmHidden {
+    display: none;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Aloitettu mobiilista */ }
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  .ilmoitus {
+    width: 50%; } }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+ 
+  .muokkaa {
+    margin-top: 25px;
+      width: 50%;
+      align-self: center;
+     }
+
+  
+
+  .ilmoitus {
+    width: 50%; }
+ }

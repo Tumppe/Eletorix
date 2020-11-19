@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+/*font-family: 'Cuprum', sans-serif;*/
+    font-size: 200%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    }
+
+
+.omatTiedot {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1em;
+    color: white;
+    border-radius: 15px; 
+}
+
+.muokkaaTietoja, .omatIlmoitukset, .vaihdaSalasana {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 50%;
+    padding: 1em;
+    background-color: #002444;
+    justify-content: space-between;
+} 
+
+.omatIlmoitukset {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: #002444;
+    padding: 30px;
+}
+
+.muokkaaTietoja, .vaihdaSalasana {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #002444;
+}
+
+.muokkaaTietoja form, .vaihdaSalasana form {
+    width: 40%;
+    padding: 1em;
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.muokkaaTietoja input, .vaihdaSalasana input {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 2px solid #002444;
+    box-shadow: 3px 2px #000044;
+}
+
+
+.navAccount {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 1em;
+    padding: 1em;
+}
+
+.navAccount h1
+{
+    color: black;
+    width: 100%;
+}
+.goUp {
+    display: none;
+    margin-left: 10px;
+}
+
+#btnOmatIlmoitukset {
+    background-color: darkblue;
+    color: white;
+}
+
+.ilmoitus {
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1em;
+    border-radius: 15px;
+    background-color: #2C8ED6;
+    border: 2px solid white;
+    padding: 1em;
+    width: 50%;*/
+    border-bottom: 2px solid #2C8ED6;
+    width: 100%;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    /*box-shadow: 0 0 35px #e60073;*/
+}
+.dirRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.dirRow h2 {
+    width: 100%;
+}
+
+.dirRow div {
+    width: 0%;
+}
+.statusMessageDiv {
+    color: black;
+    display: none;
+    width: 50%; 
+    padding: 2em;
+    margin: auto;
+    font-weight: bold;
+    /*border: 2px solid #002444;*/
+    box-shadow: 3px 2px #000044;
+}
+
+
+.ilmoitus {
+    border-bottom: 2px solid #2C8ED6;
+    width: 100%;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    /*box-shadow: 0 0 35px #e60073;*/
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .omatTiedot {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .muokkaaTietoja form, .vaihdaSalasana form {
+        width: 100%;
+    }
+    .dirRow {
+        flex-direction: column;
+    }
+    .dirRow h2, .dirRow div {
+    width: 100%;
+    }   
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .muokkaaTietoja form, .vaihdaSalasana form {
+        width: 100%;
+    }
+    .dirRow {
+        flex-direction: column;
+    }
+    .dirRow h2, .dirRow div {
+        width: 100%;
+    }   
+    .statusMessageDiv {
+        margin-bottom: 1em;
+    }
+}
